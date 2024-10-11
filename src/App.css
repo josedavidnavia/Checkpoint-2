@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+h1 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.014);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  animation: animating-multiple-properties 1s ease forwards; /* Aplicar la animación */
+}
+
+
+
+.card h3 {
+  font-size: 1.75rem;
+  color: #34495e;
+}
+
+.card p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #2980b9;
+}
+
+.detail-page {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(76, 183, 255, 0.897);
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.detail-page h1 {
+  font-size: 2rem;
+  color: #b96329;
+  margin-bottom: 15px;
+}
+
+.detail-page p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.detail-page button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.detail-page button:hover {
+  background-color: #c0392b;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e74c3c;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Definición de la animación animating-multiple-properties */
+@keyframes animating-multiple-properties {
+  from {
+    transform: translateY(110vh);
+    background-color: rgb(172, 0, 0);
+    filter: brightness(75%);
+  }
+  to {
+    transform: translateY(0);
+    background-color: rgb(255, 232, 190);
+    /* unset properties i.e. 'filter' will revert to default values */
+  }
+}
